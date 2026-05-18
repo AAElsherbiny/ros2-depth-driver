@@ -2,7 +2,7 @@
 
 A ROS 2 depth estimation package that computes per-pixel depth from **Kinect v1**, **Kinect v2**, **mono**, and **stereo** cameras.
 
-- Works as a companion to [ros2-perception-stack](https://github.com/AA-Elsherbiny/ros2-perception-stack) — consumes its camera driver objects and adds depth processing on top
+- Works as a companion to [ros2-perception-stack](https://github.com/AAElsherbiny/ros2-perception-stack) — consumes its camera driver objects and adds depth processing on top
 - Provides a unified API: `get_depth(y, x)` → returns a depth frame (with optional marker) and the depth value at that pixel
 - Stereo depth is computed via **SGBM disparity mapping** and published as a ROS 2 topic
 - Mono depth is estimated using **known-object-width** triangulation with HSV-based object detection
